@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About – Academia</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700;900&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="static/css/about.css">
+  </head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <a class="nav-logo" href="/">
+     Academ<span>ia</span>
+  </a>
+  <div class="nav-right">
+    <a class="btn-back" href="/">
+      <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <line x1="19" y1="12" x2="5" y2="12"/><polyline points="12 19 5 12 12 5"/>
+      </svg>
+      Back
+    </a>
+  </div>
+</nav>
+
+<!-- Page content -->
+<div class="page-wrap">
+
+  <!-- Hero -->
+  <div class="about-hero">
+    <div class="about-eyebrow">Final Year Project</div>
+    <h1>Design and Implementation of an<br/><em>Intelligent Information System</em></h1>
+    <p>For recommending academic journals and research articles using content-based filtering, TF-IDF vectorization, and cosine similarity.</p>
+  </div>
+
+  <!-- Meta -->
+  <div class="meta-strip">
+    <div class="meta-pill"><strong>Author</strong> Oloruntobi</div>
+    <div class="meta-pill"><strong>Level</strong> 500L Undergraduate</div>
+    <div class="meta-pill"><strong>Algorithm</strong> TF-IDF + Cosine Similarity</div>
+    <div class="meta-pill"><strong>Stack</strong> Python · Flask · SQLite</div>
+    <div class="meta-pill"><strong>Data Source</strong> arXiv Open API</div>
+  </div>
+
+  <!-- Chapter 1 -->
+  <div class="chapter" style="animation-delay:0.05s">
+    <div class="chapter-header">
+      <div class="chapter-num">1</div>
+      <div class="chapter-meta">
+        <div class="chapter-label">Chapter One</div>
+        <div class="chapter-title">Introduction</div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <h4>Background of the Study</h4>
+      <p>The advancement of digital technology has led to an exponential increase in academic publications across various fields of study. Researchers and students now have access to vast repositories of journals and scholarly articles. However, this abundance of information has created challenges in identifying relevant and high-quality academic materials. Traditional search systems often rely on keyword matching, which may not effectively capture the user's research intent.</p>
+      <p>Intelligent information systems have emerged as a solution to this problem by incorporating data processing and recommendation techniques to deliver personalized results. These systems analyze user preferences and content features to suggest relevant materials, thereby improving research efficiency and decision-making.</p>
+
+      <h4>Problem Statement</h4>
+      <p>Despite the availability of numerous academic databases, users often struggle to find relevant journals and research articles due to <strong>information overload</strong> and lack of personalization in search results. Existing systems may return irrelevant or excessive information, making it difficult for users to identify useful resources efficiently.</p>
+
+      <h4>Aim</h4>
+      <p>To design and implement an intelligent information system for recommending academic journals and research articles.</p>
+
+      <h4>Objectives</h4>
+      <ul>
+        <li>Examine existing methods of academic resource discovery</li>
+        <li>Design a system that captures user research interests</li>
+        <li>Develop a recommendation mechanism using content-based filtering</li>
+        <li>Implement the system using appropriate technologies</li>
+        <li>Evaluate the effectiveness of the system</li>
+      </ul>
+
+      <h4>Scope</h4>
+      <p>The system focuses on content-based recommendation using metadata such as titles, abstracts, and keywords sourced from the arXiv open-access repository. It covers all major academic disciplines and does not require full-text analysis or advanced deep learning models.</p>
+    </div>
+  </div>
+
+  <div class="chapter-divider"></div>
+
+  <!-- Chapter 2 -->
+  <div class="chapter" style="animation-delay:0.1s">
+    <div class="chapter-header">
+      <div class="chapter-num">2</div>
+      <div class="chapter-meta">
+        <div class="chapter-label">Chapter Two</div>
+        <div class="chapter-title">Literature Review</div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <h4>Concept of Information Systems</h4>
+      <p>Information systems involve the use of technology to collect, process, store, and distribute information. In academic environments, they support research by providing access to scholarly resources and improving knowledge management.</p>
+
+      <h4>Recommendation Systems</h4>
+      <p>Recommendation systems are software tools and techniques that provide suggestions for items most likely to be of interest to a user. They are classified into three broad categories:</p>
+      <ul>
+        <li><strong>Content-Based Filtering</strong> — recommends items similar to those the user has shown interest in, based on item features.</li>
+        <li><strong>Collaborative Filtering</strong> — recommends items based on the preferences of similar users.</li>
+        <li><strong>Hybrid Systems</strong> — combine both approaches for improved accuracy.</li>
+      </ul>
+      <p>This project adopts <strong>content-based filtering</strong> due to its effectiveness in text-heavy domains and its independence from user interaction history.</p>
+
+      <h4>TF-IDF (Term Frequency–Inverse Document Frequency)</h4>
+      <p>TF-IDF is a numerical statistic used to evaluate the importance of a word in a document relative to a collection of documents (corpus). It increases proportionally to the number of times a word appears in a document but is offset by the frequency of the word across the corpus, helping to adjust for common words.</p>
+
+      <div class="highlight">
+        <code>TF-IDF(t, d) = TF(t, d) × log(N / DF(t))</code><br/>
+        where <em>t</em> = term, <em>d</em> = document, <em>N</em> = total documents, <em>DF(t)</em> = documents containing term t
+      </div>
+
+      <h4>Review of Existing Systems</h4>
+      <ul>
+        <li><strong>Google Scholar</strong> — broad academic search with limited personalization</li>
+        <li><strong>IEEE Xplore</strong> — strong for engineering but limited to IEEE publications</li>
+        <li><strong>ResearchGate</strong> — social platform with basic recommendations</li>
+        <li><strong>Semantic Scholar</strong> — AI-assisted but complex and resource-heavy</li>
+      </ul>
+
+      <h4>Research Gap</h4>
+      <p>Existing systems lack simple, personalized recommendation features tailored for specific user interests, especially for students at the undergraduate level. This project addresses that gap by providing a lightweight, web-based intelligent recommender accessible without institutional subscriptions.</p>
+    </div>
+  </div>
+
+  <div class="chapter-divider"></div>
+
+  <!-- Chapter 3 -->
+  <div class="chapter" style="animation-delay:0.15s">
+    <div class="chapter-header">
+      <div class="chapter-num">3</div>
+      <div class="chapter-meta">
+        <div class="chapter-label">Chapter Three</div>
+        <div class="chapter-title">Methodology</div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <h4>Research Design</h4>
+      <p>This study adopts a <strong>design and development research</strong> approach, focusing on building a functional system that provides recommendations based on user input. The system integrates data processing and a content-based filtering technique with a three-tier architecture.</p>
+
+      <h4>System Architecture</h4>
+      <ul>
+        <li><strong>Presentation Layer</strong> — HTML/CSS/JavaScript frontend with a responsive UI</li>
+        <li><strong>Application Layer</strong> — Python Flask backend hosting the recommendation engine</li>
+        <li><strong>Data Layer</strong> — SQLite database storing articles, users, and search history</li>
+      </ul>
+
+      <h4>Data Collection</h4>
+      <p>Articles are fetched programmatically from the <strong>arXiv Open Access API</strong> — a free, publicly available repository containing millions of scholarly papers across Computer Science, Mathematics, Physics, Biology, Economics, and more. The system fetches papers across 55+ topics using the <code>arxiv_fetch.py</code> module.</p>
+
+      <h4>Recommendation Technique</h4>
+      <p>The system uses <strong>TF-IDF vectorization</strong> combined with <strong>Cosine Similarity</strong> to match user queries to relevant articles:</p>
+      <ul>
+        <li>Each article's title, keywords, and abstract are combined into a content string</li>
+        <li>All content strings are transformed into TF-IDF vectors at startup using Scikit-learn</li>
+        <li>The user's query is transformed into the same vector space</li>
+        <li>Cosine similarity is computed between the query vector and every article vector</li>
+        <li>The top-N articles with the highest similarity scores are returned</li>
+      </ul>
+
+      <div class="highlight">
+        <code>cosine_similarity(A, B) = (A · B) / (‖A‖ × ‖B‖)</code>
+      </div>
+
+      <h4>Implementation Tools</h4>
+      <table class="tech-table">
+        <tr><th>Component</th><th>Technology</th></tr>
+        <tr><td>Frontend</td><td>HTML5, CSS3, Vanilla JavaScript</td></tr>
+        <tr><td>Backend</td><td>Python 3, Flask</td></tr>
+        <tr><td>Database</td><td>SQLite (via Python sqlite3)</td></tr>
+        <tr><td>ML Library</td><td>Scikit-learn (TfidfVectorizer, cosine_similarity)</td></tr>
+        <tr><td>Data Source</td><td>arXiv Open API (XML/Atom)</td></tr>
+        <tr><td>Authentication</td><td>Email + SHA-256 hashed passwords, Flask sessions</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="chapter-divider"></div>
+
+  <!-- Chapter 4 -->
+  <div class="chapter" style="animation-delay:0.2s">
+    <div class="chapter-header">
+      <div class="chapter-num">4</div>
+      <div class="chapter-meta">
+        <div class="chapter-label">Chapter Four</div>
+        <div class="chapter-title">System Implementation & Results</div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <h4>System Features Implemented</h4>
+      <ul>
+        <li><strong>User Authentication</strong> — Register and sign in with email and password; passwords stored as SHA-256 hashes</li>
+        <li><strong>Article Database</strong> — Populated from the arXiv API across 55+ academic topics and disciplines</li>
+        <li><strong>Intelligent Search</strong> — Query-driven content-based filtering returning ranked results with relevance scores</li>
+        <li><strong>Search History</strong> — Every authenticated search is logged and displayed in the sidebar</li>
+        <li><strong>Browse by Topic</strong> — Homepage pre-populated with 10 randomly chosen topic groups from the database</li>
+        <li><strong>Responsive UI</strong> — Collapsible sidebar with hamburger menu; works on desktop and mobile</li>
+      </ul>
+
+      <h4>Recommendation Output</h4>
+      <p>Each recommendation result displays the article title, authors, journal/venue, publication year, keywords, abstract excerpt, and a <strong>relevance score</strong> expressed as a percentage — derived directly from the cosine similarity value multiplied by 100.</p>
+
+      <h4>System Performance</h4>
+      <p>The TF-IDF model is built once at application startup from all articles in the database. Query response time is near-instantaneous for databases up to several thousand articles, as cosine similarity computation on pre-built vectors is highly efficient.</p>
+
+      <h4>Testing</h4>
+      <ul>
+        <li><strong>Functional Testing</strong> — All routes (login, register, search, history, browse) tested and verified</li>
+        <li><strong>Accuracy Testing</strong> — Sample queries cross-checked against expected relevant articles</li>
+        <li><strong>Usability Testing</strong> — Interface reviewed for clarity, navigation, and mobile responsiveness</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="chapter-divider"></div>
+
+  <!-- Chapter 5 -->
+  <div class="chapter" style="animation-delay:0.25s">
+    <div class="chapter-header">
+      <div class="chapter-num">5</div>
+      <div class="chapter-meta">
+        <div class="chapter-label">Chapter Five</div>
+        <div class="chapter-title">Summary, Conclusion & Recommendations</div>
+      </div>
+    </div>
+    <div class="chapter-body">
+      <h4>Summary</h4>
+      <p>This project successfully designed and implemented an intelligent information system for recommending academic journals and research articles. The system accepts a user's research interest as input, processes it using TF-IDF vectorization, and returns ranked recommendations based on cosine similarity against a database of real scholarly articles sourced from the arXiv open-access repository.</p>
+
+      <h4>Conclusion</h4>
+      <p>The system demonstrates that content-based filtering using TF-IDF and cosine similarity is an effective and computationally lightweight approach to academic article recommendation. The implementation is accessible, requires no institutional subscription, and covers a broad range of academic disciplines — making it particularly suitable for undergraduate and postgraduate students in any field.</p>
+      <p>The project fulfils all stated objectives: a working recommendation engine, user authentication with search history, a clean web interface, and integration with a live academic data source.</p>
+
+      <h4>Limitations</h4>
+      <ul>
+        <li>Recommendations are limited to articles indexed on arXiv; peer-reviewed journal articles behind paywalls are not included</li>
+        <li>The system relies on keyword and abstract metadata; full-text analysis is not performed</li>
+        <li>Collaborative filtering (user-to-user similarity) is not implemented in this version</li>
+      </ul>
+
+      <h4>Recommendations for Future Work</h4>
+      <ul>
+        <li>Integrate additional data sources such as PubMed, Semantic Scholar, and CrossRef for broader coverage</li>
+        <li>Implement collaborative filtering to leverage user search history for improved personalization</li>
+        <li>Incorporate deep learning models (e.g. BERT sentence embeddings) for richer semantic matching</li>
+        <li>Add citation counts and impact factor data to improve result ranking</li>
+        <li>Deploy to a cloud platform (e.g. Heroku, Render) for public access</li>
+      </ul>
+    </div>
+  </div>
+
+</div>
+
+<!-- Footer -->
+<footer>
+  Powered by arXiv Open API
+</footer>
+
+</body>
+</html>
