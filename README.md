@@ -1,4 +1,4 @@
-# ScholarFind – Academic Journal Recommender System
+# Academia – Academic Journal Recommender System
 ### Undergraduate Project – Oloruntobi
 
 ---
@@ -14,12 +14,12 @@ based on user input, using **TF-IDF vectorization** and **Cosine Similarity**.
 journal_recommender/
 │
 ├── app.py                  ← Flask backend (recommendation engine)
-├── articles.csv            ← Dataset of 25 academic articles
+├── articles.csv|api        ← Dataset of 25 academic articles | semantic scholar & arxiv api
 ├── requirements.txt        ← Python dependencies
 ├── README.md               ← This file
 │
 └── templates/
-    └── index.html          ← Frontend UI
+    └── html/css/JS         ← Frontend UI
 ```
 
 ---
@@ -75,7 +75,7 @@ Go to: **http://127.0.0.1:5000**
 | Recommendation  | Scikit-learn (TF-IDF)   |
 | Similarity      | Cosine Similarity       |
 | Frontend        | HTML, CSS, JavaScript   |
-| Dataset         | CSV (25 articles)       |
+| Dataset         | CSV (25 articles) + api |
 
 ---
 
@@ -93,3 +93,4 @@ Go to: **http://127.0.0.1:5000**
 - Implement user login and preference saving
 - Add collaborative filtering
 - Connect to live APIs (Semantic Scholar, arXiv)
+## Future Improvements all added
